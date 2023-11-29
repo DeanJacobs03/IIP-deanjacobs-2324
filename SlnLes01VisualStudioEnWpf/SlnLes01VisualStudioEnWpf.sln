@@ -3,7 +3,48 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHalloWereld", "ConsoleHalloWereld\ConsoleHalloWereld.csproj", "{ADB66489-05A3-4D85-BC64-9992E712FCD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfHalloWereld", "WpfHalloWereld\WpfHalloWereld\WpfHalloWereld.csproj", "{125FD945-DB78-45ED-8F4F-6C81C1A0F59B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E7162543-0E5F-4639-8343-B71238074FD7}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGangsterName", "ConsoleGangsterName\ConsoleGangsterName.csproj", "{92A1F8EC-1FDA-499C-A400-ABF44B8AF01A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMahjong", "ConsoleMahjong\ConsoleMahjong.csproj", "{3FE03FB9-006F-46F0-BA4B-DA420AF892BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfChat", "WpfChat\WpfChat.csproj", "{97B922E0-F899-4194-9857-A9E5E144B065}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADB66489-05A3-4D85-BC64-9992E712FCD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB66489-05A3-4D85-BC64-9992E712FCD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB66489-05A3-4D85-BC64-9992E712FCD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB66489-05A3-4D85-BC64-9992E712FCD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125FD945-DB78-45ED-8F4F-6C81C1A0F59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125FD945-DB78-45ED-8F4F-6C81C1A0F59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125FD945-DB78-45ED-8F4F-6C81C1A0F59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125FD945-DB78-45ED-8F4F-6C81C1A0F59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92A1F8EC-1FDA-499C-A400-ABF44B8AF01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A1F8EC-1FDA-499C-A400-ABF44B8AF01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A1F8EC-1FDA-499C-A400-ABF44B8AF01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A1F8EC-1FDA-499C-A400-ABF44B8AF01A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE03FB9-006F-46F0-BA4B-DA420AF892BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE03FB9-006F-46F0-BA4B-DA420AF892BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE03FB9-006F-46F0-BA4B-DA420AF892BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE03FB9-006F-46F0-BA4B-DA420AF892BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B922E0-F899-4194-9857-A9E5E144B065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B922E0-F899-4194-9857-A9E5E144B065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B922E0-F899-4194-9857-A9E5E144B065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B922E0-F899-4194-9857-A9E5E144B065}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
