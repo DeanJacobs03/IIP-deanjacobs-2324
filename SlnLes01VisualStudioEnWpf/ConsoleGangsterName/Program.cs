@@ -33,7 +33,7 @@ namespace ConsoleGangsterName
             Console.Write("What is your last name: ");
             string naam = Console.ReadLine();
 
-            string ganstaName = character + " " + tool + " " + naam;
+            string ganstaName = character + " " + "'the " + tool + "'" + " " + naam;
 
             Console.WriteLine();
 

@@ -24,5 +24,19 @@ namespace WpfChat
         {
             InitializeComponent();
         }
+
+        private void BtnSend_Click(object sender, RoutedEventArgs e)
+        {
+
+           
+
+            TxbChat.Text += TxtNaam.Text + " says:" + Environment.NewLine + TxtMessage.Text + Environment.NewLine + Environment.NewLine;
+
+         
+
+            TxtNaam.Clear();
+            TxtMessage.Clear();
+        }
+
     }
 }

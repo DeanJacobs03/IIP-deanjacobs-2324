@@ -11,7 +11,7 @@
             <ColumnDefinition Width="24*"/>
             <ColumnDefinition Width="101*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="LblMessage" Content="Hallo! hoe is je naam?" HorizontalAlignment="Left" Margin="40,30,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="LblMessage" Content="Hallo! hoe is je naam?" HorizontalAlignment="Left" Margin="40,29,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <TextBox x:Name="TxtName" HorizontalAlignment="Left" Margin="40,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="285" Height="20" Grid.ColumnSpan="2"/>
         <Button x:Name="BtnOK" Content="OK" HorizontalAlignment="Left" Height="20" Margin="250,60,0,0" VerticalAlignment="Top" Width="45" Click="BtnOK_Click" Grid.Column="1"/>
         <Button x:Name="Btnherstel" Grid.Column="1" Content="HERSTEL" HorizontalAlignment="Left" Margin="306,60,0,0" VerticalAlignment="Top" Height="20" Width="60" RenderTransformOrigin="0.435,-0.234" Click="Btnherstel_Click"/>

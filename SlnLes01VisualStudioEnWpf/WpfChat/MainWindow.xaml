@@ -6,13 +6,18 @@
         xmlns:local="clr-namespace:WpfChat"
         mc:Ignorable="d"
         Title="02.wpf.chat" Height="450" Width="800">
-    <Grid Background="#FFDBFFFE">
-        <Label Content="Naam:" HorizontalAlignment="Left" Margin="40,60,0,0" VerticalAlignment="Top"/>
-        <Label Content="Bericht:&#xD;&#xA;" HorizontalAlignment="Left" Margin="40,106,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TxtNaam" HorizontalAlignment="Left" Margin="150,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
-        <TextBox x:Name="TxtMessage" HorizontalAlignment="Left" Margin="150,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="139"/>
-        <Button x:Name="BtnSend" Padding = "5" Content="VERZENDEN" HorizontalAlignment="Left" Margin="305,269,0,0" VerticalAlignment="Top" Width="95"/>
-        <TextBlock x:Name="TxbChat" HorizontalAlignment="Left" Height="338" Margin="483,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Background="White"/>
+    <Grid Background="#FFD0E4E5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="62*"/>
+            <ColumnDefinition Width="383*"/>
+            <ColumnDefinition Width="355*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Naam" HorizontalAlignment="Left" Margin="32,35,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Message" HorizontalAlignment="Left" Margin="32,120,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TxtNaam" HorizontalAlignment="Left" Margin="55,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" Grid.Column="1"/>
+        <TextBox x:Name="TxtMessage" HorizontalAlignment="Left" Margin="55,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" Height="141" Grid.Column="1"/>
+        <TextBox x:Name="TxbChat" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Height="362" Grid.Column="2" Margin="0,39,0,0" Background="#FFFAFAFA"/>
+        <Button Padding="5" x:Name="BtnSend" Content="VERZENDEN" HorizontalAlignment="Left" Margin="258,290,0,0" VerticalAlignment="Top" Click="BtnSend_Click" Width="80" Grid.Column="1"/>
 
     </Grid>
 </Window>
