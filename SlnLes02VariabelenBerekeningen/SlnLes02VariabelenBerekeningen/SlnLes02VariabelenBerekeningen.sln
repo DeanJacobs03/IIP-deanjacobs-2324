@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAbonnement", "ConsoleAbonnement\ConsoleAbonnement.csproj", "{8B8E6D3E-3874-42BA-B29E-CBFCBA35066B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBmi", "ConsoleBmi\ConsoleBmi.csproj", "{A577EF0D-B7DF-4F45-989F-F200FDAD352F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBuffet", "ConsoleBuffet\ConsoleBuffet.csproj", "{F133AB84-8434-465B-B895-F8992765E23B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBmi", "WpfBmi\WpfBmi.csproj", "{4C075634-3930-447A-B756-C028A4518A78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfIngredienten", "WpfIngredienten\WpfIngredienten.csproj", "{9E79EE92-B9AA-40B1-84BA-017D71698DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfWinkel", "WpfWinkel\WpfWinkel.csproj", "{393FAF1A-E106-4CD6-A43E-ACFA1CCB9C9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAlcohol", "WpfAlcohol\WpfAlcohol.csproj", "{55CFDEA8-A10B-45A1-9850-2B82A5F873E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B8E6D3E-3874-42BA-B29E-CBFCBA35066B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B8E6D3E-3874-42BA-B29E-CBFCBA35066B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B8E6D3E-3874-42BA-B29E-CBFCBA35066B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B8E6D3E-3874-42BA-B29E-CBFCBA35066B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A577EF0D-B7DF-4F45-989F-F200FDAD352F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A577EF0D-B7DF-4F45-989F-F200FDAD352F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A577EF0D-B7DF-4F45-989F-F200FDAD352F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A577EF0D-B7DF-4F45-989F-F200FDAD352F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F133AB84-8434-465B-B895-F8992765E23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F133AB84-8434-465B-B895-F8992765E23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F133AB84-8434-465B-B895-F8992765E23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F133AB84-8434-465B-B895-F8992765E23B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C075634-3930-447A-B756-C028A4518A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C075634-3930-447A-B756-C028A4518A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C075634-3930-447A-B756-C028A4518A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C075634-3930-447A-B756-C028A4518A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E79EE92-B9AA-40B1-84BA-017D71698DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E79EE92-B9AA-40B1-84BA-017D71698DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E79EE92-B9AA-40B1-84BA-017D71698DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E79EE92-B9AA-40B1-84BA-017D71698DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393FAF1A-E106-4CD6-A43E-ACFA1CCB9C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393FAF1A-E106-4CD6-A43E-ACFA1CCB9C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393FAF1A-E106-4CD6-A43E-ACFA1CCB9C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393FAF1A-E106-4CD6-A43E-ACFA1CCB9C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55CFDEA8-A10B-45A1-9850-2B82A5F873E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55CFDEA8-A10B-45A1-9850-2B82A5F873E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55CFDEA8-A10B-45A1-9850-2B82A5F873E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55CFDEA8-A10B-45A1-9850-2B82A5F873E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF859F18-1B57-4E52-B8BD-8280AADDEF6F}
+	EndGlobalSection
+EndGlobal

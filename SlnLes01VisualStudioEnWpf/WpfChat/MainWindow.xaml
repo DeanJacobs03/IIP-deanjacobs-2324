@@ -16,8 +16,8 @@
         <Label Content="Message" HorizontalAlignment="Left" Margin="32,120,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <TextBox x:Name="TxtNaam" HorizontalAlignment="Left" Margin="55,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" Grid.Column="1"/>
         <TextBox x:Name="TxtMessage" HorizontalAlignment="Left" Margin="55,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="283" Height="141" Grid.Column="1"/>
-        <TextBox x:Name="TxbChat" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Height="362" Grid.Column="2" Margin="0,39,0,0" Background="#FFFAFAFA"/>
         <Button Padding="5" x:Name="BtnSend" Content="VERZENDEN" HorizontalAlignment="Left" Margin="258,290,0,0" VerticalAlignment="Top" Click="BtnSend_Click" Width="80" Grid.Column="1"/>
+        <TextBlock x:Name="TxbChat" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="385" Width="293" Margin="10,22,0,0"/>
 
     </Grid>
 </Window>
