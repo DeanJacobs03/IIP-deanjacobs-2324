@@ -10,6 +10,8 @@ namespace ConsoleAbonnement
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
             Console.WriteLine(@"Bestelgegevens");
             Console.WriteLine(@"============== ");
 
@@ -28,19 +30,25 @@ namespace ConsoleAbonnement
             Console.Write("- geslacht (druk 'm' of 'v'):");
             char geslacht = Console.ReadKey().KeyChar;
 
+            Random rnd = new Random();
+
             Console.WriteLine();
             Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.DarkYellow;
 
-            Console.Write("Samenvatting");
-            Console.WriteLine(@"============");
+            Console.Write(@"Samenvatting
+============");
 
-            Console.WriteLine($"- houder: {naam_klant}");
-            Console.WriteLine($"- geslacht: {geslacht}");
-            Console.WriteLine($"- prijs: €{prijs}");
-            Console.WriteLine($"- aantal beurten: {beurten}");
-            Console.WriteLine($"- incl. badkledij: {kledij}");
+            Console.WriteLine();
+
+            Console.WriteLine($@"- houder: {naam_klant}
+- geslacht: {geslacht}
+- prijs: €{prijs}
+- aantal beurten: {beurten}
+- incl. badkledij: {kledij}
+- kaartnummer: {rnd.Next(100, 1000)}-{rnd.Next(1000, 10000)}-{rnd.Next(10, 100)}");
+            
             Console.ReadKey();
         }
     }
