@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Ingrediënten" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Aantal personen:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0"/>
+        <TextBox x:Name="TxbAantalpers" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="115,45,0,0" Width="70"/>
+        <Label Content="Ingrediënten (per persoon):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0" Width="200" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Hoeveelheid" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,115,0,0" FontWeight="Bold"/>
+        <Label Content="Eenheid" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="95,115,0,0" FontWeight="Bold"/>
+        <Label Content="Ingrediënt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="170,115,0,0" FontWeight="Bold"/>
+        <TextBox x:Name="TxbHvl1" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="25,145,0,0" Width="55"/>
+        <TextBox x:Name="TxbUn1" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="100,145,0,0" Width="55"/>
+        <TextBox x:Name="TxbIng1" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="175,145,0,0" Width="210"/>
+        <TextBox x:Name="TxbHvl2" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="25,175,0,0" Width="55"/>
+        <TextBox x:Name="TxbUn2" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="100,175,0,0" Width="55"/>
+        <TextBox x:Name="TxbIng2" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="175,175,0,0" Width="210"/>
+        <TextBox x:Name="TxbHvl3" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="25,205,0,0" Width="55"/>
+        <TextBox x:Name="TxbUn3" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="100,205,0,0" Width="55"/>
+        <TextBox x:Name="TxbIng3" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="175,205,0,0" Width="210"/>
+        <TextBox x:Name="TxbHvl4" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="25,235,0,0" Width="55"/>
+        <TextBox x:Name="TxbUn4" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="100,235,0,0" Width="55"/>
+        <TextBox x:Name="TxbIng4" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="2" Margin="175,235,0,0" Width="210"/>
+        <Label Content="Boodschappenlijst" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,110,0,0" FontSize="16" FontWeight="Bold"/>
+        <TextBlock x:Name="TxbLijst" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,145,0,0" TextWrapping="Wrap" Height="110" Width="230"/>
+        <Button x:Name="BtnLijst" Content="MAAK BOODSCHAPPENLIJST" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="175,280,0,0" Width="210" Height="35" FontSize="14"
+FontWeight="Bold" Click="BtnLijst_Click"/>
+
     </Grid>
 </Window>
