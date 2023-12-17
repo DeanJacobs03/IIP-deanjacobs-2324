@@ -1,43 +1,70 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace WpfProgressbar
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
-
-        private DispatcherTimer timer;
-        private double progress;
-
+        private DispatcherTimer _timer;
+        private double _progress;
 
         public MainWindow()
         {
             InitializeComponent();
+
+            _timer = new DispatcherTimer();
+            _timer.Interval = TimeSpan.FromMilliseconds(100);
+            _timer.Tick += Timer_Tick;
+
+            _progress = 0;
         }
 
-        private void InitializeTimer()
-
-
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void StartButton_Click(object sender, RoutedEventArgs e)
         {
+            StartButton.IsEnabled = false;
+            AnnuleerButton.IsEnabled = true;
 
+            _timer.Start();
+
+            ProgressRectangle.Visibility = Visibility.Visible;
+        }
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            AnnuleerButton.IsEnabled = false;
+            StartButton.IsEnabled = true;
+
+            _timer.Stop();
+            _progress = 0;
+
+            UpdateProgressBar();
+
+            ProgressRectangle.Visibility = Visibility.Collapsed;
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            _progress += 0.05;
+
+            if (_progress >= 1)
+            {
+                _timer.Stop();
+                AnnuleerButton.IsEnabled = false;
+                StartButton.IsEnabled = true;
+            }
+
+            UpdateProgressBar();
+        }
+        private void UpdateProgressBar()
+        {
+            ProgressRectangle.Width = _progress * 200;
+            LblProgress.Content = $"{_progress * 100:F0}%";
+
+            if (_progress >= 1)
+            {
+                LblProgress.Content = "klaar";
+            }
         }
     }
 }

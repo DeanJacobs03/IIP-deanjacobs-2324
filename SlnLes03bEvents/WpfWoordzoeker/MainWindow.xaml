@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfWoordzoeker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfWoordzoeker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="TxbGok" HorizontalAlignment="Left" Margin="40,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Height="34" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="BtnRaden" Content="RADEN" HorizontalAlignment="Left" Margin="330,177,0,0" VerticalAlignment="Top" Height="27" Width="55" Click="Button_Click"/>
+        <Button x:Name="Btn1" Tag="1" Content="" HorizontalAlignment="Left" Margin="40,75,0,0" VerticalAlignment="Top" Height="45" Width="72" Click="Btn1_Click"/>
+        <Button x:Name="Btn2" Tag="2" Content="" HorizontalAlignment="Left" Margin="129,77,0,0" VerticalAlignment="Top" Height="43" Width="67"/>
+        <Button x:Name="Btn4" Tag="3" Content="" HorizontalAlignment="Left" Margin="309,75,0,0" VerticalAlignment="Top" Height="45" Width="65"/>
+        <Button x:Name="Btn3" Tag="4" Content="" HorizontalAlignment="Left" Margin="215,75,0,0" VerticalAlignment="Top" Height="45" Width="64"/>
+        <Button x:Name="Btn5" Tag="5" Content="" HorizontalAlignment="Left" Margin="400,75,0,0" VerticalAlignment="Top" Height="45" Width="73"/>
+        <Label Content="Raad het woord of koop een letter (klik er op) voor 200 euro. Je krijgt maar één poging!" HorizontalAlignment="Left" Margin="44,138,0,0" VerticalAlignment="Top" Width="554"/>
+        <Label x:Name="LblFeedback" Content="" HorizontalAlignment="Left" Margin="492,23,0,0" VerticalAlignment="Top" Height="115" Width="283"/>
+
+    </Grid>
+</Window>
