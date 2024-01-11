@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "raadspel", "raadspel\raadspel.csproj", "{754994AB-DE1C-43C1-A409-FE6A6ED5670C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{754994AB-DE1C-43C1-A409-FE6A6ED5670C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754994AB-DE1C-43C1-A409-FE6A6ED5670C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754994AB-DE1C-43C1-A409-FE6A6ED5670C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754994AB-DE1C-43C1-A409-FE6A6ED5670C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DFB8DE0-8185-442A-B90B-6577F9502241}
+	EndGlobalSection
+EndGlobal
