@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 namespace typprogramma
 {
@@ -18,24 +17,20 @@ namespace typprogramma
             Console.WriteLine("3 Frans");
 
             string userinput = Console.ReadLine();
-            int keuze;
 
-            if (int.TryParse(userinput, out keuze))
+            switch (userinput) //break niet toegestaan return default wel
             {
-                switch (keuze) //break niet toegestaan return default wel
-                {
-                    case 1:
-                        PrintSentences(englishsentences);
-                        break;
-                    case 2:
-                        PrintSentences(dutchsentences);
-                        break;
-                    case 3:
-                        PrintSentences(frenchsentences);
-                        break;
-                    default:
-                        break;
-                }
+                case "1":
+                    PrintSentences(englishsentences);
+                    break;
+                case "2":
+                    PrintSentences(dutchsentences);
+                    break;
+                case "3":
+                    PrintSentences(frenchsentences);
+                    break;
+                default:
+                    break;
             }
 
             Environment.Exit(0);
@@ -46,27 +41,60 @@ namespace typprogramma
         {
             int index = rnd.Next(0, sentences.Length);
             string sentence = sentences[index];
-            StringBuilder sb = new StringBuilder();
-            char character;
-            do
             {
-                Console.Clear();
+                string getypteTekst = "";
+
+                bool escape = false;
+
                 Console.WriteLine(sentence);
+                //gaat door zolang je nog niet alles getypt hebt
+                do
+                {
+                    //typen 
+                    ConsoleKeyInfo ck = Console.ReadKey();
+                    if (ck.Key == ConsoleKey.Escape)
+                    {
+                        escape = true;
+                    }
+                    else
+                    {
+                        char letter = ck.KeyChar;
+                        getypteTekst += letter;
+
+                        Console.Clear();
+                        // dit gaat tekst opnieuw tonen met kleur
+                        for (int i = 0; i < sentence.Length; i++)
+                        {
+                            if (getypteTekst.Length < i + 1)
+                            {
+                                Console.ForegroundColor = ConsoleColor.White;
+
+                            }
+                            else if (sentence[i] == getypteTekst[i])
+                            {
+                                Console.ForegroundColor = ConsoleColor.Green;
+
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                            }
+                            Console.Write(sentence[i]);
+                        }
+                    }
+
+
+
+                }
+                while (sentence.Length > getypteTekst.Length && !escape);
                 Console.WriteLine();
-                Console.Write(sb.ToString());
-                ConsoleKeyInfo consoleKeyInfo = Console.ReadKey(false);
-                character = consoleKeyInfo.KeyChar;
-                if (character != (char)8)
-                {
-                    sb.Append(character);
-                }
-                else
-                {
-                    sb.Remove(sb.Length - 1, 1);
-                }
+                Console.WriteLine();
 
-            } while (!sb.ToString().Equals(sentence) && character != (char)27);
+                Console.WriteLine("ggestopt met typen"); //bug "g" fix
 
+                Console.ReadKey();
+            }
         }
     }
+
 }
