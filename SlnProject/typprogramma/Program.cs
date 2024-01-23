@@ -8,6 +8,8 @@ namespace typprogramma
         private static string[] dutchsentences = { "Sedert jaren vraag ik mij af, waartoe zulke dingen dienen, en ik sta verbaasd over de onbeschaamdheid, waarmee een dichter of romanverteller u iets op de mouw durft spelden, dat nooit gebeurd is, en meestal niet gebeuren kan.", "Dat zijn ook makelaars in koffie, doch hun adres behoeft ge niet te weten. Ik pas er dus wel op, dat ik geen romans schrijf, of andere valse opgaven doe. Ik heb dan ook altijd opgemerkt dat mensen die zich met zoiets inlaten, gewoonlijk slecht wegkomen. Ik ben drieënveertig jaar oud, bezoek sedert twintig jaren de beurs, en kan dus voor de dag treden, als men iemand roept die ondervinding heeft." };
         private static string[] frenchsentences = { "Le client est très important merci, le client sera suivi par le client. Énée n'a pas de justice, pas de résultat, pas de ligula, et la vallée veut la sauce. Morbi mais qui veut vendre une couche de contenu triste d'internet. Être ivre maintenant, mais ne pas être ivre maintenant, mon urne est d'une grande beauté, mais elle n'est pas aussi bien faite que dans un livre.", "Mécène dans la vallée de l'orc, dans l'élément même. Certaines des exigences faciles du budget, qu'il soit beaucoup de temps pour dignissim et. Je ne m'en fais pas chez moi, ça va être moche dans le vestibule. Mais aussi des protéines de Pour avant la fin de la semaine, qui connaît le poison, le résultat." };
         private static Random rnd = new Random();
+        private static int wrongCharacterCount = 0;
+        private static int totalCharacterCount = 0;
 
         static void Main(string[] args)
         {
@@ -33,6 +35,8 @@ namespace typprogramma
                     break;
             }
 
+            PrintScoreBoard();
+
             Environment.Exit(0);
 
         }
@@ -42,8 +46,7 @@ namespace typprogramma
             int index = rnd.Next(0, sentences.Length);
             string sentence = sentences[index];
             {
-                string getypteTekst = "";
-
+                string getypteTekst = String.Empty;
                 bool escape = false;
 
                 Console.WriteLine(sentence);
@@ -56,37 +59,25 @@ namespace typprogramma
                     {
                         escape = true;
                     }
+                    else if (ck.Key == ConsoleKey.Backspace)
+                    {
+                        getypteTekst = getypteTekst.Remove(getypteTekst.Length - 1);
+                        wrongCharacterCount++;
+
+                        UpdateSentence(sentence, getypteTekst);
+                    }
                     else
                     {
+                        totalCharacterCount++;
+
                         char letter = ck.KeyChar;
                         getypteTekst += letter;
 
-                        Console.Clear();
-                        // dit gaat tekst opnieuw tonen met kleur
-                        for (int i = 0; i < sentence.Length; i++)
-                        {
-                            if (getypteTekst.Length < i + 1)
-                            {
-                                Console.ForegroundColor = ConsoleColor.White;
-
-                            }
-                            else if (sentence[i] == getypteTekst[i])
-                            {
-                                Console.ForegroundColor = ConsoleColor.Green;
-
-                            }
-                            else
-                            {
-                                Console.ForegroundColor = ConsoleColor.Red;
-                            }
-                            Console.Write(sentence[i]);
-                        }
+                        UpdateSentence(sentence, getypteTekst);
                     }
-
-
-
                 }
-                while (sentence.Length > getypteTekst.Length && !escape);
+                while (!sentence.Equals(getypteTekst) && !escape);
+
                 Console.WriteLine();
                 Console.WriteLine();
 
@@ -94,6 +85,36 @@ namespace typprogramma
 
                 Console.ReadKey();
             }
+        }
+
+        private static void UpdateSentence(String sentence, String getypteTekst)
+        {
+            Console.Clear();
+            // dit gaat tekst opnieuw tonen met kleur
+            for (int i = 0; i < sentence.Length; i++)
+            {
+                if (getypteTekst.Length < i + 1)
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+
+                }
+                else if (sentence[i] == getypteTekst[i])
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                }
+                Console.Write(sentence[i]);
+            }
+        }
+
+        private static void PrintScoreBoard()
+        {
+            Console.WriteLine($"Het aantal fouten bedraagt: {wrongCharacterCount}.");
+            Console.WriteLine($"Fout percentage: {(float)wrongCharacterCount / (float)totalCharacterCount}.");
         }
     }
 
